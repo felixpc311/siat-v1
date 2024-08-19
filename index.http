@@ -1,0 +1,64 @@
+###
+
+## Consultas a la API
+
+### Obtener todos los años lectivos
+
+GET http://localhost:8080/api/v2/aniolectivo/getall
+Content-Type: application/json
+### Obtener un año lectivo por id
+
+GET http://localhost:8080/api/v2/aniolectivo/getbyid/1
+
+### Crear un año lectivo
+
+POST http://localhost:8080/api/v2/aniolectivo/save
+Content-Type: application/json
+
+{
+    "anioLectivo": 2024
+}
+
+
+### Actualizar un año lectivo
+
+PUT http://localhost:8080/anioLectivos/1
+Content-Type: application/json
+
+{
+    "anioLectivo": 2023
+}
+
+### Eliminar un año lectivo
+
+DELETE http://localhost:8080/anioLectivos/1
+
+### Obtener todos los periodos
+
+GET http://localhost:8080/periodos
+
+### Obtener un periodo por id
+
+GET http://localhost:8080/periodos/1
+
+### Crear un periodo
+
+POST http://localhost:8080/periodos
+Content-Type: application/json
+
+{
+    "periodoNumero": 1
+}
+
+### Actualizar un periodo
+
+PUT http://localhost:8080/periodos/1
+Content-Type: application/json
+
+{
+    "periodoNumero": 2
+}
+
+### Eliminar un periodo
+
+DELETE http://localhost:8080/periodos/1
